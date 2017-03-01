@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Demo</title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-animate.min.js"></script>
+    <script src="lib/angular/firebase.js"></script>
+    <script src="lib/angular/angularfire.min.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUGYOCycaVJicHaZX_FTsQCewc2uOd8GI",
+    authDomain: "classmates-8192e.firebaseapp.com",
+    databaseURL: "https://classmates-8192e.firebaseio.com",
+    storageBucket: "classmates-8192e.appspot.com",
+    messagingSenderId: "38461651355"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/controller.js"></script>
+    <link rel="stylesheet" href="css/style.css" charset="utf-8">
+</head>
+
+<body>
+    <div class="main" ng-view>
+    </div>
+</body>
+
+</html>
